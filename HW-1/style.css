@@ -1,0 +1,141 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #222222;
+  background-position: center;
+}
+
+p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.hero{
+  /*set height to 100% of the browser height*/
+  height: 100vh;
+  min-height: 740px;
+  background-image: url("images/heroImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.hero .title{
+  /*adding a sticky title*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  bottom: 100vh;
+
+  font-size: 40pt;
+  color: #222222;
+  float: left;
+  margin-left: 1em;
+  padding: 1em;
+
+  text-align: left;
+  line-height: 0.9;
+
+}
+
+.title h1{
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.info{
+  margin: 10vw auto;
+  padding: 1em;
+  width: 75%;
+  min-width: 300px;
+
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.info h2{
+  font-size: 32pt;
+  color: #000000;
+  float: auto;
+
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.why{
+  margin: 10vw auto;
+  padding: 1em;
+  width: 75%;
+  min-width: 300px;
+
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.why h2{
+  font-size: 32pt;
+  color: #ffffff;
+  float: auto;
+
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.about{
+  /*force photo within div*/
+  overflow: hidden;
+  padding-top: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.about img{
+  margin-bottom: 20px;
+  float: left;
+}
+
+.about p{
+  margin: 15px;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  display: block;
+}
+
+/*changing the size with media height*/
+@media (max-width: 865px){
+    .hero{
+        min-height: 730px;
+    }
+    .hero .title{
+        font-size: 36pt;
+        margin-left: .5em;
+    }
+}
+
+@media (max-width: 585px){
+    .hero{
+        min-height: 500px;
+    }
+    .hero .title{
+        font-size: 32pt;
+        margin-left: .5em;
+    }
+}
+
+@media (max-width: 445px){
+    .hero .title{
+        font-size: 30pt;
+        margin-left: .5em;
+    }
+}
