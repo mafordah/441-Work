@@ -1,0 +1,3 @@
+# HW-2
+## My Experience
+I found my first experience with JavaScript surprisingly intuitive. After refreshing with HTML and CSS again, this little bit of JavaScript seemed simple. The only small issue I had was figuring out how to get strings to appear on more than one line of the console. For whatever reason, I assumed you could only have one line of `console.log();`. After trying it with more than one, I solved my problem pretty quick. I was already familiar with styling within HTML, so the rest of the project was also fairly easy for me. This was a nice ease into JavaScript, and I am already starting to see how my p5.js knowledge will apply.
