@@ -1,3 +1,4 @@
+//DOM Variables
 const mainImg = document.getElementById("img");
 const mainTxt = document.getElementById("txt");
 const mainOpts = document.getElementById("opts");
@@ -6,16 +7,19 @@ const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
 const btn4 = document.getElementById("btn4");
 
+//Changing Variables
 let state = 0;
 let stage = 1;
 var type;
 var sword;
 
+//Start Fuction
 function start(){
   state = 0;
   stage = 1;
 }
 
+//Set State
 function select(state){
   if (state == 1 && stage == 1){
     mainTxt.innerHTML = "You mustn't be a hard one to remember with such a name! I say, this is not your first quest. I would share my gifts with you, but it appears you already have such strength.";
@@ -168,8 +172,7 @@ function select(state){
     stage+=1;
   }
 
-
-
 }
 
+//Run Start
 start();
