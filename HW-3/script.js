@@ -156,7 +156,8 @@ function select(state){
     btn2.innerHTML = '...';
     btn3.innerHTML = '..';
     btn4.innerHTML = '.';
-    
+
+    stage+=1;
   } else if (stage == 5){
     mainTxt.innerHTML = "You begin the seemingly endless plummet out of the white abyss of the Realm of Creation. The white fades into a pleasant gradient of blue as you begin to see color for the first time. The greyish hues of your body change to the diverse tones of flesh. You begin to forget you're falling as you examine your newfound body. You begin to feel as though you're being submerged until suddenly. Darkness."
 
@@ -164,6 +165,7 @@ function select(state){
     btn2.innerHTML = 'be';
     btn3.innerHTML = 'continued';
     btn4.innerHTML = '...';
+    stage+=1;
   }
 
 
