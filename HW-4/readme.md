@@ -1,4 +1,4 @@
-# HW-3
+# HW-4
 ## My Experience
 JavaScript is getting so much easier! Though my `if` and `if else` statements are getting a little complex for comfort. I feel confident that I, at the very least, know what is going on now. I was able to implement most of the new things we learned this week. Including `Math.random()` which I used to randomize an event for one of the characters. While I technically "included" a `while` loop, I couldn't come up with anything to actually use it for yet. I will need it to create menus in future iterations, but for now it's just looping a number. I was going to use it to slowly change the "Darkness" in the scene where the characters wake up, but as the number called it didn't update the visual properly. Maybe I'm just missing a `for` loop again, who knows ;).
 
