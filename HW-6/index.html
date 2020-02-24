@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <!--meta-->
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="author" content="Miya Fordah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--style-->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Give+You+Glory&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--main div-->
+    <div class="main start" id="main">
+      <h1>Memory</h1>
+      <label for="firstName">First name:</label><br />
+      <input type="text" id="firstName" name="firstName"><br /><br />
+      <label for="lastName">Last name:</label><br />
+      <input type="text" id="lastName" name="lastName"><br /><br />
+      <label for="age">Age:</label><br />
+      <input type="number" id="age" name="age"><br /><br /><br />
+      <a href="game.html"><button type="button" name="submitButton" onclick="setData()">Play</button></a>
+    </div>
+    
+    <!--script-->
+    <script>
+      function setData(){
+        var data = {};
+        data.firstName = document.getElementById("firstName").value;
+        data.lastName = document.getElementById("lastName").value;
+        data.age = document.getElementById("age").value;
+        data.moves = 0;
+        localStorage.setItem("data", JSON.stringify(data));
+      }
+    </script>
+  </body>
+</html>
