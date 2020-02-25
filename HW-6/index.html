@@ -16,17 +16,18 @@
     <div class="main start" id="main">
       <h1>Memory</h1>
       <label for="firstName">First name:</label><br />
-      <input type="text" id="firstName" name="firstName"><br /><br />
+      <input type="text" id="firstName" name="firstName" maxlength="16"><br /><br />
       <label for="lastName">Last name:</label><br />
-      <input type="text" id="lastName" name="lastName"><br /><br />
+      <input type="text" id="lastName" name="lastName" maxlength="16"><br /><br />
       <label for="age">Age:</label><br />
-      <input type="number" id="age" name="age"><br /><br /><br />
+      <input type="number" id="age" name="age" min="1" max="101"><br /><br /><br />
       <a href="game.html"><button type="button" name="submitButton" onclick="setData()">Play</button></a>
     </div>
-    
+
     <!--script-->
     <script>
       function setData(){
+        //store data
         var data = {};
         data.firstName = document.getElementById("firstName").value;
         data.lastName = document.getElementById("lastName").value;

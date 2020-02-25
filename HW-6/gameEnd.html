@@ -16,11 +16,30 @@
     <!--main div-->
     <div class="main start" id="main">
       <h1>Congratulations!</h1>
-      <a href="game.html"><button type="button" name="playButton">Play Again</button></a>
+      <div>
+        <p id=name></p>
+        <p id=age></p>
+        <p id=timer>Time: <span id="minutes">00</span>:<span id="seconds">00</span></p>
+        <p id=score></p>
+      </div>
+      <a href="game.html"><button type="button" name="playButton" onclick="reset()">Play Again</button></a>
       <a href="index.html"><button type="button" name="returnButton">Main Menu</button></a>
     </div>
 
     <!--script-->
-    <script src="./script.js"></script>
+    <script>
+      var data = localStorage.getItem("data");
+
+      document.getElementById("name").innerHTML = JSON.parse(data).firstName + " " + JSON.parse(data).lastName;
+      document.getElementById("age").innerHTML = JSON.parse(data).age;
+      document.getElementById("minutes").innerHTML = JSON.parse(data).minutes;
+      document.getElementById("seconds").innerHTML = JSON.parse(data).seconds;
+      document.getElementById("score").innerHTML = "Moves: " + JSON.parse(data).moves;
+
+      function reset(){
+        var resetData = {firstName: JSON.parse(data).firstName, lastName: JSON.parse(data).lastName, age: JSON.parse(data).age, moves: 0};
+        localStorage.setItem("data", JSON.stringify(resetData));
+      }
+    </script>
   </body>
 </html>

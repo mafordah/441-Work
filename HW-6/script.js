@@ -28,8 +28,9 @@ var unmatchedSound = new Audio("./media/flipBack.wav");
 //moves
 var data = localStorage.getItem("data");
 var attempts = 0;
-var moves;
+var movesVar;
 var matches = 0;
+
 
 //timer code from Bakudan @https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript
 var sec = 0;
@@ -47,13 +48,12 @@ function start(){//Display Blanks
   for(var i = 0; i < images.length; i++){
 
     document.getElementById(images[i]).src = cardBack;
-    //document.getElementById(images[i]).addEventListener("click", flip(i));
 
   }
 
   //get items from local storage
-  moves = JSON.parse(data).moves;
-  document.getElementById("score").innerHTML ="Moves: " + moves;
+  movesVar = JSON.parse(data).moves;
+  document.getElementById("score").innerHTML ="Moves: " + movesVar;
   document.getElementById("name").innerHTML = JSON.parse(data).firstName;
 }
 
@@ -83,7 +83,6 @@ function flip(i){//Flip Card
   document.getElementById(images[i]).src = cardFront[i];
   //disable click while flipped to prevent errors
   document.getElementById(images[i]).style.pointerEvents = 'none';
-  //document.getElementById(images[i]).onclick = null;
 
   if (flip1 == "none"){ //First Card
     //save index if unmatched
@@ -145,20 +144,22 @@ function flip(i){//Flip Card
 
   function attempt(){//increase move #
     attempts = attempts + 1;
+
     //get items from local storage
-    moves = JSON.parse(data).moves + attempts;
-    document.getElementById("score").innerHTML ="Moves: " + moves;
+    movesVar = JSON.parse(data).moves + attempts;
+    document.getElementById("score").innerHTML ="Moves: " +  movesVar;
   }
 
 
   function matched(){
-    matchedSound.currentTime = 0;
-    matchedSound.play();
-
     //add matches
     matches = matches + 1;
+
     if(matches == 10){
       endGame();
+    } else {
+      matchedSound.currentTime = 0;
+      matchedSound.play();
     }
 
     //set back to none
@@ -171,9 +172,6 @@ function flip(i){//Flip Card
 
 
   function unmatched(){
-    //document.getElementById(images[card1]).onclick = "flip(card1)";
-    //document.getElementById(images[card2]).onclick = "flip(card2)";
-
     //change back to cardBack if unmatched
     setTimeout(function(){
 
@@ -196,7 +194,21 @@ function flip(i){//Flip Card
 
   //end game
   function endGame(){
-    window.location = "gameEnd.html";
+    var success = new Audio("./media/success.mp3");;
+    success.play();
+
+    var endData = {firstName: JSON.parse(data).firstName, lastName: JSON.parse(data).lastName, age: JSON.parse(data).age};
+    endData.moves = attempts;
+    endData.minutes = document.getElementById("minutes").innerHTML;
+    endData.seconds = document.getElementById("seconds").innerHTML;
+
+    localStorage.setItem("data", JSON.stringify(endData));
+    console.log(endData);
+
+    //wait for sound
+    setTimeout(function(){
+      window.location = "gameEnd.html";
+    }, 1000)
   }
 }
 
