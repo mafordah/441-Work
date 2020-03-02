@@ -1,0 +1,59 @@
+body{
+  background-color: #222222;
+  font-family: 'Special Elite', serif;
+  font-size: 16px;
+}
+
+h1{
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+button{
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  color: #222222;
+  text-align: center;
+  font-family: 'Special Elite', serif;
+  font-size: 16px;
+}
+
+button:hover{
+  font-size: 18px;
+}
+
+.main{
+  margin: auto;
+  margin-top: 5%;
+  padding: 30px;
+  max-width: 400px;
+  min-height: 500px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.button{
+  text-align: center;
+}
+
+
+@media (max-width: 865px){
+
+}
+
+@media (max-width: 585px){
+
+}
+
+@media (max-width: 445px){
+
+}
