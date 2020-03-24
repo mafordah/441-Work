@@ -1,0 +1,49 @@
+body{
+  background-color: #222222;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+}
+
+h1{
+  font-family: 'VT323', monospace;
+}
+
+button{
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  background-color: #931616;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  color: #450c0c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+button:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.main{
+  margin: auto;
+  padding: 20px;
+  width: 300px;
+  height: 480px;
+
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: #931616;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+.screen{
+  height: 200px;
+  /*background-color: #688b63;*/
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.button{
+  text-align: center;
+}
