@@ -115,7 +115,7 @@ class Collectable{
 
 
 // let obstacle = new Obstacle(60, 80, 10, 100);
-let collectable = new Collectable(120, 80, 10, 10);
+// let collectable = new Collectable(120, 80, 10, 10);
 setInterval(update, 1000/60);
 
 function setup(){
@@ -127,7 +127,7 @@ function setup(){
 
   $.getJSON("json/collectables.json", function(result) {
     for(var i = 0; i < result.collectables.length; i++) {
-      collectableArray.push(new Obstacle(result.collectables[i].x, result.collectables[i].y, result.collectables[i].width, result.collectables[i].height));
+      collectableArray.push(new Collectable(result.collectables[i].x, result.collectables[i].y, result.collectables[i].width, result.collectables[i].height));
     }
   });
 
@@ -165,7 +165,7 @@ function draw(){
 
     if(((x + w) >= (collectableArray[i].x)) && (x <= (collectableArray[i].x + collectableArray[i].width)) && ((y + h) >= collectableArray[i].y) && (y <= (collectableArray[i].y + collectableArray[i].height))){
       score = score + 1;
-      collectableArray.splice(i);
+      collectableArray.splice(i, 1);
     }
   }
 
@@ -182,6 +182,15 @@ function draw(){
     if(((x + w) >= (obstacleArray[i].x)) && (x <= (obstacleArray[i].x + obstacleArray[i].width)) && ((y + h) >= obstacleArray[i].y) && (y <= (obstacleArray[i].y + obstacleArray[i].height))){
       y = 300;
       x = 0;
+      score = 0;
+
+      collectableArray.splice(0, 6);
+
+      $.getJSON("json/collectables.json", function(result) {
+        for(var i = 0; i < result.collectables.length; i++) {
+          collectableArray.push(new Collectable(result.collectables[i].x, result.collectables[i].y, result.collectables[i].width, result.collectables[i].height));
+        }
+      });
     }
   }
 
