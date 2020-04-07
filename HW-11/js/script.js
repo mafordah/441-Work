@@ -13,6 +13,7 @@ var collectableArray = [];
 
 //score
 var score = 0;
+var end = false;
 
 var sound = document.getElementById("sound");
 sound.loop = true;
@@ -185,13 +186,22 @@ function draw(){
       score = 0;
 
       collectableArray.splice(0, 6);
-
       $.getJSON("json/collectables.json", function(result) {
         for(var i = 0; i < result.collectables.length; i++) {
           collectableArray.push(new Collectable(result.collectables[i].x, result.collectables[i].y, result.collectables[i].width, result.collectables[i].height));
         }
       });
     }
+
+    // if (collectableArray.length == 0 && end == false){
+    //     $.getJSON("json/collectables.json", function(result) {
+    //     for(var i = 0; i < result.collectables.length; i++) {
+    //       collectableArray.push(new Collectable(result.collectables[i].x, result.collectables[i].y, result.collectables[i].width, result.collectables[i].height));
+    //     }
+    //   });
+    // }
+
+
   }
 
 }

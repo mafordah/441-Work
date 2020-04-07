@@ -1,5 +1,6 @@
 # HW-11
 ## My Experience
-
+For this week I played off of my previous project an built a Frogger-like game where you avoid the floating rectangles and collect the squares.
 
 ## Problems
+I ran it a few problems this week, most of which were logical errors. This is one of the first weeks in a while that I really had to dig into the example. My first issue came from JSON parsing. I was trying to parse the data after using `getJSON` without needing to. Once I had that figured out, it was a matter of getting them into the classes. I built two while I probably only needing the one because they're identical. However, when I trying removing one I broke something so I just left it be. Lastly I had some issues with how the splicing worked. It was removing all the objects when they were collected instead of just the one. I realized I had to specify which and how many objects to remove from the array. Lastly, I tried to have the objects come back once you collected them all so you could continue, but I ran into another error where when it was splicing and adding objects to the array for a gameover restart it was also trying to do the same for a continue as it was reading the splice as the array length hitting zero (because it was). I can't quite wrap my head around how to fix that one just yet.
