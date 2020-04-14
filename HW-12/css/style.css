@@ -1,0 +1,33 @@
+body{
+  background-color: #222222;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -ms-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+canvas{
+  background-color: white;
+}
+
+h1{
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.main{
+  margin: auto;
+  margin-top: 30px;
+  padding: 30px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.button{
+  text-align: center;
+}
