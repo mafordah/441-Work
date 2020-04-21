@@ -33,7 +33,7 @@ renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
 var loader = new THREE.GLTFLoader();
 
-loader.load('../assets/Flamingo.glb', function(gltf) {
+loader.load('assets/Flamingo.glb', function(gltf) {
     scene.add(gltf.scene);
 }, undefined, function(error) {
     console.error(error);
