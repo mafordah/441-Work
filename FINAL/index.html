@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta-->
+    <meta charset="utf-8">
+    <title>Creation</title>
+    <meta name="author" content="Miya Fordah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Special+Elite&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="main" id="main">
+      <!-- Tab creation code from w3schools @https://www.w3schools.com/howto/howto_js_tabs.asp -->
+      <!-- Tab links -->
+      <div class="menu">
+        <div class="tab">
+          <button class="tablinks" id="homeTab" onclick="openTab(event, 'home')">home</button>
+          <button class="tablinks" onclick="openTab(event, 'bag')">bag</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="home" class="tabcontent">
+          <strong><p id="character"></p></strong>
+          <p id="dialog"></p>
+          <i id="navArrow"></i>
+        </div>
+
+        <div id="bag" class="tabcontent">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div id="buttons" class="buttonGrid">
+        <button id="btn1" class="button">Someone bold</button>
+        <button id="btn2" class="button">Someone beautiful</button>
+        <button id="btn3" class="button">Someone brilliant</button>
+        <button id="btn4" class="button">Someone brash</button>
+      </div>
+    </div>
+
+    <!--script-->
+    <script src="lib/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>

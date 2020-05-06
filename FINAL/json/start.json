@@ -1,0 +1,28 @@
+{
+   "state":[
+      {
+         "id":0,
+         "character":"...",
+         "dialog":"Welcome, traveller. Tell me, who are you?",
+         "options":[
+            {
+               "text":"Someone bold",
+               "type": "strong"
+            },
+            {
+               "text":"Someone beautiful",
+               "type":"fair"
+            },
+            {
+               "text":"Someone brilliant",
+               "type":"bright"
+            },
+            {
+               "text":"Someone brash",
+               "type":"rogue"
+            }
+         ],
+         "arrow":"none"
+      }
+   ]
+}
