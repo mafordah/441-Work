@@ -37,7 +37,7 @@ function startGame(){
 
       //select option function
       button.addEventListener('click', function(){
-        console.log(i);
+        //console.log(i);
         type = result.state[0].options[i].type;
         runGame(0);
       })
@@ -70,7 +70,7 @@ function runGame(index){
     var textSplit = result.state[index].dialog.match(/\(?[^\.\?\!]+[\.!\?]+\)?/g);
     //var textSplit = result.state[index].dialog.split(". ");
     console.log(textSplit);
-    console.log(result.state[index].nextId);
+    console.log("next Id: " + result.state[index].nextId);
     var textI = 0;
     $("#dialog").html(textSplit[textI]);
 
@@ -100,7 +100,7 @@ function runGame(index){
     $("#navArrow").click(function() {
       if (textI + 1 < textSplit.length){
         textI += 1;
-        console.log(textI);
+        console.log("current text: " + textI);
         checkText();
         $("#dialog").html(textSplit[textI]);
       } else if(textI + 1 >= textSplit.length && result.state[index].nextId !== undefined){
