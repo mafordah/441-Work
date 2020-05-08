@@ -165,16 +165,74 @@
          "character":"...",
          "dialog":"Oh just spendid! Off you go!",
          "options":[
-         ],
-         "nextId":10
+            {
+               "text":"Continue",
+               "nextText":10
+            }
+         ]
       },
       {
          "id":9,
          "character":"...",
          "dialog":"You pull yourself away from my voice but find there is nothing else to run towards. There is nothing but us here in the Realm of Creation. As you run further into the expansive whiteness, you find your sanity begin to slip. The endless void of white... Who am I? Who are you? Perhaps I should have summoned another... Goodbye bright one. Goodbye.",
          "options":[
-         ],
-         "nextId":-2
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+         ]
+      },
+      {
+         "id":10,
+         "character":"...",
+         "dialog":"You begin the seemingly endless plummet out of the white abyss of the Realm of Creation. The white fades into a pleasant gradient of blue as you begin to see color for the first time. The greyish hues of your body change to the diverse tones of flesh. You begin to forget you're falling as you examine your newfound body. You begin to feel as though you're being submerged until suddenly...",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":11
+            }
+         ]
+      },
+      {
+         "id":11,
+         "character":"...",
+         "dialog":"Darkness.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":12
+            }
+         ]
+      },
+      {
+         "id":12,
+         "character":"...",
+         "dialog":"You awake at your desk nearly smothered by a falling pile of books and paperwork. That's odd. You remember putting these away... You must have fallen asleep before tidying up.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":13
+            }
+         ]
+      },
+      {
+         "id":13,
+         "character":"...",
+         "dialog":"After returning the stacks to their rightful places, you notice a scientific report left on your desk that has yet to be signed.",
+         "options":[
+            {
+               "text":"Sign the document",
+               "nextText":14
+            },
+            {
+               "text":"Read the document",
+               "nextText":15
+            },
+            {
+               "text":"Do it later",
+               "nextText":16
+            }
+         ]
       }
    ]
 }

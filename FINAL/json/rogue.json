@@ -165,16 +165,115 @@
          "character":"...",
          "dialog":"Oh just spendid! Off you go!",
          "options":[
-         ],
-         "nextId":10
+            {
+               "text":"Continue",
+               "nextText":10
+            }
+         ]
       },
       {
          "id":9,
          "character":"...",
          "dialog":"You pull yourself away from my voice but find there is nothing else to run towards. There is nothing but us here in the Realm of Creation. As you run further into the expansive whiteness, you find your sanity begin to slip. In the endless void of white... Who am I? Who are you? Perhaps I should have summoned another... Goodbye rogue one. Goodbye.",
          "options":[
-         ],
-         "nextId":-2
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+         ]
+      },
+      {
+         "id":10,
+         "character":"...",
+         "dialog":"You begin the seemingly endless plummet out of the white abyss of the Realm of Creation. The white fades into a pleasant gradient of blue as you begin to see color for the first time. The greyish hues of your body change to the diverse tones of flesh. You begin to forget you're falling as you examine your newfound body. You begin to feel as though you're being submerged until suddenly...",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":11
+            }
+         ]
+      },
+      {
+         "id":11,
+         "character":"...",
+         "dialog":"Darkness.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":12
+            }
+         ]
+      },
+      {
+         "id":12,
+         "character":"...",
+         "dialog":"You awake as the sunrise flutters into the windows of a strange room. You have no idea where you are, or how you got there, but one thing is for certain... You have a splitting headache.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":13
+            }
+         ]
+      },
+      {
+         "id":13,
+         "character":"???",
+         "dialog":"AAaaUGH!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":14
+            }
+         ]
+      },
+      {
+         "id":14,
+         "character":"...",
+         "dialog":"If your head was not ringing enough, it certainly is now. After the auditory asault, you see a woman running out of the corner of your eye, only to then see a castle guard standing over you.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":15
+            }
+         ]
+      },
+      {
+         "id":15,
+         "character":"Castle Guard",
+         "dialog":"You there! What do you think you are doing?! Give me your name before I take you straight to the barracks!",
+         "options":[
+            {
+               "text":"Give the guard your name",
+               "nextText":16
+            },
+            {
+               "text":"Walk yourself to the barracks",
+               "nextText":17
+            },
+            {
+               "text":"Attempt escape",
+               "nextText":18
+            }
+         ]
+      },
+      {
+         "id":16,
+         "character":"...",
+         "dialog":"You there! What do you think you are doing?! Give me your name before I take you straight to the barracks!",
+         "options":[
+            {
+               "text":"Give the guard your name",
+               "nextText":16
+            },
+            {
+               "text":"Walk yourself to the barracks",
+               "nextText":17
+            },
+            {
+               "text":"Attempt escape",
+               "nextText":18
+            }
+         ]
       }
    ]
 }

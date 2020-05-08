@@ -72,9 +72,11 @@
          "character":"...",
          "dialog":"That broad sword is the weapon of your character. It may aid you on your quest if you so choose.",
          "options":[
-
-         ],
-         "nextId":4
+            {
+               "text":"Continue",
+               "nextText":4
+            }
+         ]
       },
       {
          "id":4,
@@ -165,99 +167,121 @@
          "character":"...",
          "dialog":"Oh just spendid! Off you go!",
          "options":[
-
-         ],
-         "nextId":10
+            {
+               "text":"Continue",
+               "nextText":10
+            }
+         ]
       },
       {
          "id":9,
          "character":"...",
          "dialog":"You pull yourself away from my voice but find there is nothing else to run towards. There is nothing but us here in the Realm of Creation. As you run further into the expansive whiteness, you find your sanity begin to slip. The endless void of white... Who am I? Who are you? Perhaps I should have summoned another... Goodbye strong one. Goodbye.",
          "options":[
-
-         ],
-         "nextId":-2
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+         ]
       },
       {
          "id":10,
          "character":"...",
          "dialog":"You begin the seemingly endless plummet out of the white abyss of the Realm of Creation. The white fades into a pleasant gradient of blue as you begin to see color for the first time. The greyish hues of your body change to the diverse tones of flesh. You begin to forget you're falling as you examine your newfound body. You begin to feel as though you're being submerged until suddenly...",
          "options":[
-
-         ],
-         "nextId":11
+            {
+               "text":"Continue",
+               "nextText":11
+            }
+         ]
       },
       {
          "id":11,
          "character":"...",
          "dialog":"Darkness.",
          "options":[
-
-         ],
-         "nextId":12
+            {
+               "text":"Continue",
+               "nextText":12
+            }
+         ]
       },
       {
          "id":12,
          "character":"...",
          "dialog":"You awake slowly as the sunrise pours in from beyond the mountains. You must've dozed off at your post. That's unusual... You straighten up sharply in hopes no one caught you in a moment of weekness. Someone will be here to releave you shortly.",
          "options":[
-
-         ],
-         "nextId":13
+            {
+               "text":"Continue",
+               "nextText":13
+            }
+         ]
       },
       {
          "id":13,
          "character":"???",
          "dialog":"AAaaUGH!",
          "options":[
-
-         ],
-         "nextId":14
+            {
+               "text":"Continue",
+               "nextText":14
+            }
+         ]
       },
       {
          "id":14,
          "character":"...",
          "dialog":"A frazzled woman comes barrelling down the hallway headed straight for you.",
          "options":[
-
-         ],
-         "nextId":15
+            {
+               "text":"Continue",
+               "nextText":15
+            }
+         ]
       },
       {
          "id":15,
          "character":"???",
          "dialog":"THERE IS A DRUNKARD IN THE CASTLE!",
          "options":[
-
-         ],
-         "nextId":16
+            {
+               "text":"Continue",
+               "nextText":16
+            }
+         ]
       },
       {
          "id":16,
          "character":"...",
          "dialog":"She screams at you from a far, but it might as well be directly in your ear.",
          "options":[
-
-         ],
-         "nextId":17
+            {
+               "text":"Continue",
+               "nextText":17
+            }
+         ]
       },
       {
          "id":17,
          "character":"???",
          "dialog":"DRUNKARD!",
          "options":[
-
-         ],
-         "nextId":18
+           {
+              "text":"Continue",
+              "nextText":18
+           }
+         ]
       },
       {
          "id":18,
          "character":"...",
          "dialog":"As she gets closer, you recognise her as one of the ladies in waiting.",
          "options":[
-
-         ],
-         "nextId":19
+            {
+               "text":"Continue",
+               "nextText":19
+            }
+         ]
       },
       {
          "id":19,

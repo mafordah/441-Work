@@ -4,9 +4,12 @@ var buttons = document.getElementById("buttons");
 var type;
 
 let player = {};
+let deaths = [];
 
 function newGame(){
-  player = {strongLives:true, fairLives:true, brightLives:true, rogueLives:true};
+  player = {};
+  deaths = [];
+
   startGame();
 }
 
@@ -32,15 +35,20 @@ function startGame(){
     for(let i = 0; i < result.state[0].options.length; i++){
       //create buttons
       const button = document.createElement('button');
-      button.innerHTML = result.state[0].options[i].text;
-      button.classList.add('button');
+      if (deaths.includes(result.state[0].options[i].type) == false){
+        button.innerHTML = result.state[0].options[i].text;
+        button.classList.add('button');
 
-      //select option function
-      button.addEventListener('click', function(){
-        //console.log(i);
-        type = result.state[0].options[i].type;
-        runGame(0);
-      })
+        //select option function
+        button.addEventListener('click', function(){
+          //console.log(i);
+          type = result.state[0].options[i].type;
+          runGame(0);
+        })
+      } else {
+        button.innerHTML = "&#9760;";
+        button.classList.add('button');
+      }
 
       //show buttons
       buttons.appendChild(button);
@@ -74,17 +82,35 @@ function runGame(index){
     var textI = 0;
     $("#dialog").html(textSplit[textI]);
 
+    checkText();
+    $("#navArrow").click(function() {
+      if (textI + 1 < textSplit.length){
+        textI += 1;
+        console.log("current text: " + textI);
+        checkText();
+        $("#dialog").html(textSplit[textI]);
+      }
+    });
+
     //check if text array is finishes
     function checkText(){
       //show buttons or arrow
-      if (textI + 1 >= textSplit.length && result.state[index].nextId == undefined){
+      if (textI + 1 >= textSplit.length){
         $("#navArrow").css("display", "none");
 
         //add buttons with avaliable options back in
         for(let i = 0; i < result.state[index].options.length; i++){
           const button = document.createElement('button');
-          button.innerHTML = result.state[index].options[i].text;
-          button.classList.add('button');
+
+          //Finally found a work around for the navigation arrow! Thanks again!!
+          //If there is only one option, the button becomes the arrow :)
+          if (result.state[index].options.length == 1){
+            button.classList.add('arrow');
+          } else {
+            button.innerHTML = result.state[index].options[i].text;
+            button.classList.add('button');
+          }
+
           button.addEventListener('click', function(){
             var newIndex = result.state[index].options[i].nextText;
             runGame(newIndex);
@@ -96,18 +122,7 @@ function runGame(index){
       }
     }
 
-    checkText();
-    $("#navArrow").click(function() {
-      if (textI + 1 < textSplit.length){
-        textI += 1;
-        console.log("current text: " + textI);
-        checkText();
-        $("#dialog").html(textSplit[textI]);
-      } else if(textI + 1 >= textSplit.length && result.state[index].nextId !== undefined){
-        index = result.state[index].nextId;
-        runGame(index);
-      }
-    });
+
 
   });
 
@@ -115,7 +130,8 @@ function runGame(index){
 
 
 function death(){
-
+  deaths.push(type);
+  startGame();
 }
 
 
