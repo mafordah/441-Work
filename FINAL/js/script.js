@@ -6,6 +6,7 @@ var type;
 let player = {};
 let deaths = [];
 
+
 function newGame(){
   player = {};
   deaths = [];
@@ -17,6 +18,7 @@ function newGame(){
 function continueGame(){
   //startGame();
 }
+
 
 //determine which json file to parse from
 function startGame(){
@@ -35,7 +37,7 @@ function startGame(){
     for(let i = 0; i < result.state[0].options.length; i++){
       //create buttons
       const button = document.createElement('button');
-      if (deaths.includes(result.state[0].options[i].type) == false){
+      if (deaths.includes(result.state[0].options[i].type) == false){ //if character is alive
         button.innerHTML = result.state[0].options[i].text;
         button.classList.add('button');
 
@@ -45,8 +47,8 @@ function startGame(){
           type = result.state[0].options[i].type;
           runGame(0);
         })
-      } else {
-        button.innerHTML = "&#9760;";
+      } else { //if dead
+        button.innerHTML =result.state[0].options[i].text.strike();
         button.classList.add('button');
       }
 
