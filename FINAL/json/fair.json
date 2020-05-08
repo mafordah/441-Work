@@ -12,9 +12,7 @@
             {
                "text":"Accept a gift anyway",
                "nextText":2,
-               "setState":{
-                  "lance":"true"
-               }
+               "item":"lance"
             },
             {
                "text":"Change your mind",
@@ -28,19 +26,18 @@
          "dialog":"There is no need for thanks, fair one.",
          "options":[
             {
-               "text":"'What is this for?'",
-               "requiredState":{
-                  "lance":"true"
-               },
-               "nextText":3
-            },
-            {
                "text":"'Why am I here?'",
                "nextText":4
             },
             {
                "text":"'Who are you?'",
                "nextText":5
+            }
+         ],
+         "events":[
+            {
+              "item":"lance",
+              "nextText":3
             }
          ]
       },
@@ -65,6 +62,12 @@
                "text":"'Who are you?'",
                "nextText":5
             }
+         ],
+         "events":[
+            {
+              "item":"lance",
+              "nextText":3
+            }
          ]
       },
       {
@@ -72,9 +75,11 @@
          "character":"...",
          "dialog":"That lance is the weapon of your character. It may aid you on your quest if you so choose.",
          "options":[
-
-         ],
-         "nextId":4
+            {
+               "text":"Continue",
+               "nextText":4
+            }
+         ]
       },
       {
          "id":4,

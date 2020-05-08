@@ -12,9 +12,7 @@
             {
                "text":"Accept a gift anyway",
                "nextText":2,
-               "setState":{
-                  "broadSword":"true"
-               }
+               "item":"broadSword"
             },
             {
                "text":"Change your mind",
@@ -28,19 +26,18 @@
          "dialog":"There is no need for thanks, strong one.",
          "options":[
             {
-               "text":"'What is this for?'",
-               "requiredState":{
-                  "broadSword":"true"
-               },
-               "nextText":3
-            },
-            {
                "text":"'Why am I here?'",
                "nextText":4
             },
             {
                "text":"'Who are you?'",
                "nextText":5
+            }
+         ],
+         "events":[
+            {
+              "item":"broadSword",
+              "nextText":3
             }
          ]
       },
@@ -64,6 +61,12 @@
             {
                "text":"'Who are you?'",
                "nextText":5
+            }
+         ],
+         "events":[
+            {
+              "item":"broadSword",
+              "nextText":3
             }
          ]
       },

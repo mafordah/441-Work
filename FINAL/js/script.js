@@ -1,16 +1,16 @@
 var dialog = document.getElementById("dialog");
 var characterSpeaking = document.getElementById("character");
 var buttons = document.getElementById("buttons");
+var items = document.getElementById("items");
 var type;
 
-let player = {};
+let player = [];
 let deaths = [];
 
 
 function newGame(){
-  player = {};
+  player = [];
   deaths = [];
-
   startGame();
 }
 
@@ -28,6 +28,11 @@ function startGame(){
     buttons.removeChild(buttons.firstChild)
   }
 
+  //remove all items
+  while(items.firstChild){
+    items.removeChild(items.firstChild)
+  }
+
   //get text from specific json object
   $.getJSON("json/start.json", function(result) {
     $("#character").html(result.state[0].character + ":");
@@ -43,7 +48,6 @@ function startGame(){
 
         //select option function
         button.addEventListener('click', function(){
-          //console.log(i);
           type = result.state[0].options[i].type;
           runGame(0);
         })
@@ -72,6 +76,11 @@ function runGame(index){
     buttons.removeChild(buttons.firstChild)
   }
 
+  //remove all items
+  while(items.firstChild){
+    items.removeChild(items.firstChild)
+  }
+
   //get text from specific json object
   $.getJSON("json/" + type + ".json", function(result) {
     $("#character").html(result.state[index].character + ":");
@@ -83,6 +92,26 @@ function runGame(index){
     console.log("next Id: " + result.state[index].nextId);
     var textI = 0;
     $("#dialog").html(textSplit[textI]);
+
+    //add avaliable items back in
+    for(let i = 0; i < player.length; i++){
+      const item = document.createElement('img');
+      item.src = "assets/" + player[i] + ".png";
+      item.classList.add('item');
+
+      item.addEventListener('click', function(){
+        //if there is an item event activate item event
+        if (Array.isArray(result.state[index].events) && player.includes(result.state[index].events[i].item)){
+          var newIndex = result.state[index].events[i].nextText;
+          runGame(newIndex);
+          document.getElementById("homeTab").click();
+        } else { //item can not be used
+          document.getElementById("itemText").innerHTML = "You can't use that here";
+          setTimeout(function(){document.getElementById("itemText").innerHTML = ""}, 2000)
+        }
+      })
+      items.appendChild(item);
+    }
 
     checkText();
     $("#navArrow").click(function() {
@@ -114,8 +143,12 @@ function runGame(index){
           }
 
           button.addEventListener('click', function(){
+            if (result.state[index].options[i].item !== undefined){
+              player.push(result.state[index].options[i].item)
+            }
             var newIndex = result.state[index].options[i].nextText;
             runGame(newIndex);
+            document.getElementById("homeTab").click();
           })
           buttons.appendChild(button);
         }
