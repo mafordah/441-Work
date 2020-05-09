@@ -62,12 +62,6 @@ body{
   height: 20px;
 }
 
-.textInput{
-  display:grid;
-  grid-template-columns: repeat(1, auto);
-  gap: 20px;
-}
-
 .main{
   margin: auto;
   margin-top: 20px;

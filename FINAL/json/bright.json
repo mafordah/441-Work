@@ -223,21 +223,711 @@
       {
          "id":13,
          "character":"...",
-         "dialog":"After returning the stacks to their rightful places, you notice a scientific report left on your desk that has yet to be signed.",
+         "dialog":"After returning the stacks to their rightful places, you notice a scientific report left out on your desk. You begin to eye it over so it can be filed properly.",
          "options":[
             {
-               "text":"Sign the document",
+               "text":"Continue",
                "nextText":14
-            },
+            }
+         ]
+      },
+      {
+         "id":14,
+         "character":"???",
+         "dialog":"excuse me, sir...",
+         "options":[
             {
-               "text":"Read the document",
+               "text":"Continue",
                "nextText":15
-            },
+            }
+         ]
+      },
+      {
+         "id":15,
+         "character":"...",
+         "dialog":"A rather mouse-ish voice squeaks from beyond the heavy wooden doors to your quarters.",
+         "options":[
             {
-               "text":"Do it later",
+               "text":"Continue",
                "nextText":16
             }
          ]
+      },
+      {
+         "id":16,
+         "character":"???",
+         "dialog":"Sorry to bother you, but it's urgent.",
+         "options":[
+            {
+               "text":"Open the door",
+               "nextText":17
+            },
+            {
+               "text":"Call them in",
+               "nextText":18
+            },
+            {
+               "text":"Ignore them",
+               "nextText": 56
+            }
+         ],
+         "events":[
+            {
+              "item":"studyKey",
+              "nextText":19
+            }
+         ]
+      },
+      {
+         "id":17,
+         "character":"...",
+         "dialog":"You walk up to the doors and turn one of the handles. It's locked. You must have the key somewhere...",
+         "options":[
+            {
+               "text":"Call them in",
+               "nextText":18
+            },
+            {
+               "text":"Ignore them",
+               "nextText": 56
+            }
+         ],
+         "events":[
+            {
+              "item":"studyKey",
+              "nextText":19
+            }
+         ]
+      },
+      {
+         "id":18,
+         "character":"???",
+         "dialog":"My apologies sir... But it's locked.",
+         "options":[
+            {
+               "text":"Open the door",
+               "nextText":17
+            },
+            {
+               "text":"Ignore them",
+               "nextText": 56
+            }
+         ],
+         "events":[
+            {
+              "item":"studyKey",
+              "nextText":19
+            }
+         ]
+      },
+      {
+         "id":19,
+         "character":"...",
+         "dialog":"You riffle amongst your things and find the key to your study. You unlock the doors and slowly drag them open. A small boy, easily no older than ten or twelve, stands with his hands folded and his head down.",
+         "options":[
+            {
+               "text":"Ask what's so urgent",
+               "nextText":21
+            },
+            {
+               "text":"Ask his name",
+               "nextText":20
+            },
+            {
+               "text":"Shut the door in his face",
+               "nextText": 56
+            }
+         ]
+      },
+      {
+         "id":20,
+         "character":"Ronan",
+         "dialog":"It's Ronan. I'm the stable hand from just downstairs.",
+         "options":[
+            {
+               "text":"Ask what's so urgent",
+               "nextText":21
+            },
+            {
+               "text":"Shut the door in his face",
+               "nextText": 56
+            }
+         ]
+      },
+      {
+         "id":21,
+         "character":"Ronan",
+         "dialog":"It's the royal, sir. From Tesiland. They've arrived. The Duke's hand sent me upstairs to notify you... and um... Oh! And that the meeting will begin at breakfast as soon as they're settled.",
+         "options":[
+            {
+               "text":"Prepare for your meeting",
+               "nextText": 25
+            },
+            {
+               "text":"Thank him for his trouble",
+               "nextText":24
+            },
+            {
+               "text":"Question him further",
+               "nextText":22
+            },
+            {
+               "text":"Shut the door in his face",
+               "nextText": 56
+            }
+         ],
+         "events":[
+            {
+              "item":"dagger",
+              "nextText":23
+            }
+         ]
+      },
+      {
+         "id":22,
+         "character":"Ronan",
+         "dialog":"That was it. I think... It was a rather brief encounter, sir.",
+         "options":[
+            {
+               "text":"Prepare for your meeting",
+               "nextText": 25
+            },
+            {
+               "text":"Thank him for his trouble",
+               "nextText":24
+            },
+            {
+               "text":"Shut the door in his face",
+               "nextText": 56
+            }
+         ],
+         "events":[
+            {
+              "item":"dagger",
+              "nextText":23
+            }
+         ]
+      },
+      {
+         "id":23,
+         "character":"...",
+         "dialog":"You swiftly flash your dagger and mercilessly stab the child. You've never heard of any of this business before. Certainly the boy is a Trojan horse! The boy turns to look you in the eye. You keep stabbing, waiting for the lights to fade from his eyes. But they never do. The boy looks frightened by your actions but is otherwise unfased. You look down only to realize your dagger has vanished and you've merely been lightly jabbing the child. You mustn't kill innocent children on a hunch, bright one. You should know better. Goodbye.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": -2
+            }
+         ]
+      },
+      {
+         "id":24,
+         "character":"...",
+         "dialog":"You thank the boy. He smiles and runs off down the stairs. Ah to be young again.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 25
+            }
+         ]
+      },
+      {
+         "id":25,
+         "character":"...",
+         "dialog":"As the Duke of Cardamon's chief advisor, you take immence pride in the influence you have over society. As such, you prepare most dilgently for any meeting with the Duke or any other royal in the Kindom. You must set an example.",
+         "options":[
+            {
+               "text":"Collect your documents",
+               "item":"document",
+               "nextText": 32
+            },
+            {
+               "text":"Review your documents",
+               "nextText": 26
+            }
+         ]
+      },
+      {
+         "id":26,
+         "character":"...",
+         "dialog":"It's a rather troubling documentation...",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 27
+            }
+         ]
+      },
+      {
+         "id":27,
+         "character":"The Effects of Dark Energy",
+         "dialog":"Dark Energy: The previously unknown force was discovered when a component of an arcane object was divided into two parts. The effects were catastrophic.",
+         "options":[
+            {
+               "text":"Keep Reading",
+               "nextText": 28
+            },
+            {
+               "text":"Collect the documents",
+               "item":"document",
+               "nextText": 32
+            }
+         ]
+      },
+      {
+         "id":28,
+         "character":"The Effects of Dark Energy",
+         "dialog":"An explosion far greater than that of any cannon erupted decimating the research lab. Of the thirty-seven subjects in the lab, no one escaped with their lives. These subject included the prior Duke of Cardamon and his advisor. Those who later inspected the wreckage were also effected.",
+         "options":[
+            {
+               "text":"Keep Reading",
+               "nextText": 29
+            },
+            {
+               "text":"Collect the documents",
+               "item":"document",
+               "nextText": 32
+            }
+         ]
+      },
+      {
+         "id":29,
+         "character":"The Effects of Dark Energy",
+         "dialog":"Three subjects: Dustin Reign, male, aged 37 years; Weyrn West, female, aged 48 years; Towhard Fetter, male, aged 22 years; All subjects experienced confusion, anger, and complete hysteria while studies took place. Fetter's condition progressed into aggressive tendancies as he attacked researchers and other subjects.",
+         "options":[
+            {
+               "text":"Keep Reading",
+               "nextText": 30
+            },
+            {
+               "text":"Collect the documents",
+               "item":"document",
+               "nextText": 32
+            }
+         ]
+      },
+      {
+         "id":30,
+         "character":"The Effects of Dark Energy",
+         "dialog":"Further studies have taken place sense this event. Later missions to the sight of the explosion left subjects feeling unchanged with family members stating a slight change in behavior toward some aggressive tendancies. Current studies of Dark Energy research the effects on soldiers, and the detonating of arcane objects as weaponry. The results are still inconclusive.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 31
+            }
+         ]
+      },
+      {
+         "id":31,
+         "character":"...",
+         "dialog":"The rest of the document contains pages of figure reports for the various studies.",
+         "options":[
+            {
+               "text":"Collect the documents",
+               "item":"document",
+               "nextText": 32
+            }
+         ]
+      },
+      {
+         "id":32,
+         "character":"...",
+         "dialog":"You place the report into a large pocket of your coat where they have less chance of being wrinkled. It's weight pulls your jacket down slightly. It's a sensation you've grown to love. A full pocket of research. Most excelent.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 33
+            }
+         ]
+      },
+      {
+         "id":33,
+         "character":"...",
+         "dialog":"You exit your study and lock the door behind you. It would be foolish to leave such sensitive information to prying eyes. The dinning hall is but a short walk from your quarters and you arrive there shortly.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 34
+            }
+         ]
+      },
+      {
+         "id":34,
+         "character":"???",
+         "dialog":"Good evening, good sir!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 35
+            }
+         ]
+      },
+      {
+         "id":35,
+         "character":"...",
+         "dialog":"The Duke's voice chimes regally over the giant table. He's a few years your junior, but as your father served his father, you will serve him.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 36
+            }
+         ]
+      },
+      {
+         "id":36,
+         "character":"The Duke of Cardamon",
+         "dialog":"Come, come! Sit, sit!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 37
+            }
+         ]
+      },
+      {
+         "id":37,
+         "character":"...",
+         "dialog":"The Duke waves you to the table. He points to the seat at his side.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 38
+            }
+         ]
+      },
+      {
+         "id":38,
+         "character":"The Duke of Cardamon",
+         "dialog":"They shall be here at any moment! Guard! Oh, Guard! Please make sure they have a royal escourt the dinning hall!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 39
+            }
+         ]
+      },
+      {
+         "id":39,
+         "character":"...",
+         "dialog":"The guard perks up slightly, nods, and begin a steady walk to the other end of the castle. It's imposible to tell the gender, but their energy suggests they're completely exhasted.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 40
+            }
+         ]
+      },
+      {
+         "id":40,
+         "character":"...",
+         "dialog":"The guard returns with quite the character. It's a royal figure dressed to the nines in full blue and gold. They come followed by a quart of high figures of Cardamon. It's a magnificent sight to behold. The duke jumps from his seat then settles himself to speak.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 41
+            }
+         ]
+      },
+      {
+         "id":41,
+         "character":"The Duke of Cardamon",
+         "dialog":"Your Highness.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 42
+            }
+         ]
+      },
+      {
+         "id":42,
+         "character":"...",
+         "dialog":"The Duke deeply bows. You have never seen him lower himself to anyone before.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 43
+            }
+         ]
+      },
+      {
+         "id":43,
+         "character":"The Duke of Cardamon",
+         "dialog":"I know we have spent many months admiring each other from a far. With my father's blessing upon his recent passing, I would like to take the opportunity welcome you to Cardamon for this gratious opportunity.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 44
+            }
+         ]
+      },
+      {
+         "id":44,
+         "character":"...",
+         "dialog":"The Duke pauses and glances in your direction.",
+         "options":[
+            {
+               "text":"Stand and bow",
+               "nextText": 47
+            },
+            {
+               "text":"Do nothing",
+               "nextText": 46
+            },
+            {
+               "text":"Run out of the room",
+               "nextText": 45
+            }
+         ],
+         "events":[
+            {
+              "item":"documents",
+              "nextText":48
+            }
+         ]
+      },
+      {
+         "id":45,
+         "character":"...",
+         "dialog":"The Duke has something crazy in his eyes! You run out of the room in a frenzy and defenestrate yourself. You fall into nearby puddle and your documentation disintegrates in your pocket. It's for the best, lord knows what that man could have done with that much power. Well... I guess you've done it. You stopped the complete destruction cause by Dark Energy as I'd sent your for. Albeit... Not exactly in they way I expected... Regardless, congradulations! You've completed your quest. You are now free to live your life however you choose. Continue, don't continue, I don't really care. However, you're going to need to start at the beginning.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": -1
+            }
+         ]
+      },
+      {
+         "id":46,
+         "character":"...",
+         "dialog":"The Duke looks annoyed.",
+         "options":[
+            {
+               "text":"Stand and bow",
+               "nextText": 47
+            },
+            {
+               "text":"Run out of the room",
+               "nextText": 45
+            }
+         ],
+         "events":[
+            {
+              "item":"documents",
+              "nextText":48
+            }
+         ]
+      },
+      {
+         "id":47,
+         "character":"The Duke of Cardamon",
+         "dialog":"The presentation if you would, My Advisor.",
+         "options":[
+            {
+               "text":"Run out of the room",
+               "nextText": 45
+            }
+         ],
+         "events":[
+            {
+              "item":"documents",
+              "nextText":48
+            }
+         ]
+      },
+      {
+         "id":48,
+         "character":"...",
+         "dialog":"Your give your presentation on the effects of Dark Energy",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 49
+            }
+         ]
+      },
+      {
+         "id":49,
+         "character":"The Duke of Cardamon",
+         "dialog":"So you see. We have aquired a most destructive power... and... I really don't want to use it on your kingdom. We can do this civilly, or by force. Hand over your kingdom.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 54
+            }
+         ],
+         "events":[
+            {
+              "item":"documents",
+              "nextText":51
+            },
+            {
+              "item":"dagger",
+              "nextText":50
+            }
+         ]
+      },
+      {
+         "id":50,
+         "character":"...",
+         "dialog":"You serve your kingdom, not this man. You will not end innocent lives in war. Even for science. You take your dagger and quickly assalt the Duke. He falls to the ground. You've done it! You've completed your quest. Mass destruction shall not take place just yet. You know may continue your life free of my influence. Or don't. I don't really care. However, you must start from the beginning. Congradulations!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": -1
+            }
+         ]
+      },
+      {
+         "id":51,
+         "character":"...",
+         "dialog":"You stand and tear up the documents right over the Duke's syrup ladden pancakes. You will not dedicate your research to war.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 52
+            }
+         ]
+      },
+      {
+         "id":52,
+         "character":"The Duke of Cardamon",
+         "dialog":"YOU FOOL!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 53
+            }
+         ]
+      },
+      {
+         "id":53,
+         "character":"...",
+         "dialog":"Guards surround you. You are rushed into excile. But the world is saved! You did it! You have completed your quest. Mass destruction shall not take place just yet. You know may continue your life free of my influence. Or don't. I don't really care. However, you must start from the beginning. Congradulations!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": -1
+            }
+         ]
+      },
+      {
+         "id":54,
+         "character":"...",
+         "dialog":"Upon an attempted escape, guards surround the unaccompanied royal. They are dragged to the dugeon and become a prisoner of war. You watch, unmoving.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 55
+            }
+         ],
+         "events":[
+            {
+              "item":"documents",
+              "nextText":51
+            },
+            {
+              "item":"dagger",
+              "nextText":50
+            }
+         ]
+      },
+      {
+         "id":55,
+         "character":"...",
+         "dialog":"You begin planning Dark Energy warfare with the Duke. The war travels around the globe as billions are forced to surrender or die. The Dark Energy has massive effects on the people as they become more aggressive and further war ridden. You live a comfortable life stained with the blood of the fallen. You have failed me, bright one. The war of the Below shall forever rage unchecked.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": -2
+            }
+         ]
+      },
+      {
+         "id":56,
+         "character":"...",
+         "dialog":"You haven't any time for the rabblings of a child. There is paperwork to be filed. As you continue organising things. A person tumbles in through your window.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 57
+            }
+         ]
+      },
+      {
+         "id":57,
+         "character":"???",
+         "dialog":"I've gotta get out of here.",
+         "options":[
+            {
+               "text":"Stay perfectly still",
+               "nextText": 58
+            },
+            {
+               "text":"Get their attention",
+               "nextText": 59
+            }
+         ]
+      },
+      {
+         "id":58,
+         "character":"...",
+         "dialog":"You make no sudden movements, but it's a person not a T-rex. You're essentially standing in the middle of the room.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 59
+            }
+         ]
+      },
+      {
+         "id":59,
+         "character":"...",
+         "dialog":"You catch the person's attention and they point a sword your way.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 60
+            }
+         ]
+      },
+      {
+         "id":60,
+         "character":"???",
+         "dialog":"You. You didn't see anything.",
+         "options":[
+            {
+               "text":"Understood",
+               "nextText": 61
+            },
+            {
+               "text":"You definitely saw that",
+               "nextText": 61
+            }
+         ]
+      },
+      {
+         "id":61,
+         "character":"???",
+         "dialog":"I better make sure you know exactly who your dealing with.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": 62
+            }
+         ]
+      },
+      {
+         "id":62,
+         "character":"...",
+         "dialog":"The person charges you and sends you both falling back out of the window. While the person breaks your fall, you land in... a compromising position. You are accused of adultery and sentenced to death.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText": -2
+            }
+         ]
       }
+
+
    ]
 }

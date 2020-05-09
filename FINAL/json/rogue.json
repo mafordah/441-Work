@@ -243,26 +243,26 @@
       {
          "id":15,
          "character":"Castle Guard",
-         "dialog":"You there! What do you think you are doing?! Give me your name before I take you straight to the barracks!",
+         "dialog":"You there! What do you think you are doing?! And in a maiden's quarters no less! Straight to the barracks with you!",
          "options":[
             {
-               "text":"Give the guard your name",
+               "text":"Surrender to the guard",
                "nextText":16
             },
             {
                "text":"Walk yourself to the barracks",
-               "nextText":17
+               "nextText": "na"
             },
             {
                "text":"Attempt escape",
-               "nextText":18
+               "nextText": "na"
             }
          ]
       },
       {
          "id":16,
-         "character":"...",
-         "dialog":"You there! What do you think you are doing?! Give me your name before I take you straight to the barracks!",
+         "character":"",
+         "dialog":"You there! What do you think you are doing?! And in a maiden's quarters no less! Straight to the barracks with you!",
          "options":[
             {
                "text":"Give the guard your name",

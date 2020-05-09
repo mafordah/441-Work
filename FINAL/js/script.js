@@ -49,6 +49,16 @@ function startGame(){
         //select option function
         button.addEventListener('click', function(){
           type = result.state[0].options[i].type;
+          //add in default items
+          if(type == "strong"){
+            player = ["helmet"];
+          } else if (type == "fair"){
+            player = ["ring"];
+          } else if (type == "bright"){
+            player = ["studyKey"];
+          } else if (type == "rogue"){
+            player = ["bottle"];
+          }
           runGame(0);
         })
       } else { //if dead
@@ -101,13 +111,21 @@ function runGame(index){
 
       item.addEventListener('click', function(){
         //if there is an item event activate item event
-        if (Array.isArray(result.state[index].events) && player.includes(result.state[index].events[i].item)){
-          var newIndex = result.state[index].events[i].nextText;
-          runGame(newIndex);
-          document.getElementById("homeTab").click();
-        } else { //item can not be used
+        if (Array.isArray(result.state[index].events) == false){//no event
           document.getElementById("itemText").innerHTML = "You can't use that here";
           setTimeout(function(){document.getElementById("itemText").innerHTML = ""}, 2000)
+
+        } else { //event
+          for (let j = 0; j < result.state[index].events.length; j++){
+            if (player[i] == result.state[index].events[j].item){
+              var newIndex = result.state[index].events[j].nextText;
+              runGame(newIndex);
+              document.getElementById("homeTab").click();
+            } else { //event exists but item cannot be used
+              document.getElementById("itemText").innerHTML = "You can't use that here";
+              setTimeout(function(){document.getElementById("itemText").innerHTML = ""}, 2000)
+            }
+          }
         }
       })
       items.appendChild(item);
@@ -166,6 +184,7 @@ function runGame(index){
 
 function death(){
   deaths.push(type);
+  player = [];
   startGame();
 }
 

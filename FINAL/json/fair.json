@@ -256,19 +256,19 @@
       {
          "id":16,
          "character":"Denland",
-         "dialog":"I don't believe we've been formally introduced...",
+         "dialog":"We consider you a royal guest here at Cardamon. Please, make yourself at home.",
          "options":[
            {
-              "text":"Give Denland your name",
+              "text":"Smile politely",
               "nextText":17
            },
            {
               "text":"Help with your bags",
-              "nextText":18
+              "nextText": "na"
            },
            {
               "text":"Exit through the other door",
-              "nextText":19
+              "nextText": "na"
            }
          ]
       }

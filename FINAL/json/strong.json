@@ -44,7 +44,7 @@
       {
          "id":2,
          "character":"...",
-         "dialog":"A broad sword manifests into the emptiness before you. You grasp it proudly then store it amongst your other weapons.",
+         "dialog":"A broadsword manifests into the emptiness before you. You grasp it proudly then store it amongst your other weapons.",
          "options":[
             {
                "text":"Thank them",
@@ -73,7 +73,7 @@
       {
          "id":3,
          "character":"...",
-         "dialog":"That broad sword is the weapon of your character. It may aid you on your quest if you so choose.",
+         "dialog":"That broadsword is the weapon of your character. It may aid you on your quest if you so choose.",
          "options":[
             {
                "text":"Continue",
@@ -289,19 +289,19 @@
       {
          "id":19,
          "character":"Lady in Waiting",
-         "dialog":"YOU! HOW DARE YOU LET A DRUNKARD IN THE CASTLE! I WILL BE REPORTING TO YOU THE ROYAL GUARD!! GIVE ME YOUR NAME, AND FOR THE LOVE OF ALL THINGS! GET. RID. OF. HIM.",
+         "dialog":"YOU! HOW DARE YOU LET A DRUNKARD IN THE CASTLE! REMOVE THE DIRTY SCOUNDREL IMMEDIATELY OR I WILL BE REPORTING TO YOU THE ROYAL GUARD AND... and... YOU WILL BE WALKING ME DOWN THERE!! JUST. GET. RID. OF. HIM.",
          "options":[
             {
-               "text":"Give your name",
+               "text":"Offer to help",
                "nextText":20
             },
             {
-               "text":"Offer to help",
-               "nextText":21
+               "text":"Walk her to the Royal Guards Post",
+               "nextText": "na"
             },
             {
                "text":"Refuse",
-               "nextText":22
+               "nextText": "na"
             }
          ]
       }
