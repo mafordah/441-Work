@@ -264,11 +264,22 @@
            },
            {
               "text":"Help with your bags",
-              "nextText": "na"
+              "nextText": 17
            },
            {
               "text":"Exit through the other door",
-              "nextText": "na"
+              "nextText": 17
+           }
+         ]
+      },
+      {
+         "id":17,
+         "character":"...",
+         "dialog":"Oh... Well. Um. Look at that. This is a bit awkward... You've made it to the part of the story that just isn't quite finished. A shame. It has a pretty good ending. Not to worry though! There are quite a few finished endings on other routes! As a creator, I just didn't have quite enough time to fit them all in here. Might I suggest the bright route? You get to meet this character there if you make out alive. Not to worry though. For now you'll keep your life. To the beginning with you.",
+         "options":[
+           {
+              "text":"Continue",
+              "nextText":-1
            }
          ]
       }

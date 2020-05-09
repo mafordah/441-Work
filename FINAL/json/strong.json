@@ -297,12 +297,120 @@
             },
             {
                "text":"Walk her to the Royal Guards Post",
-               "nextText": "na"
+               "nextText": 27
             },
             {
                "text":"Refuse",
-               "nextText": "na"
+               "nextText": 26
             }
+         ]
+      },
+      {
+         "id":20,
+         "character":"...",
+         "dialog":"You follow the woman to a room in the castle. Sure enough, a fellow clearly woken up from a night of heavy drinking looks up at you confused.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":21
+            }
+         ]
+      },
+      {
+         "id":21,
+         "character":"Drunkard",
+         "dialog":"Ah. Uh... good morning...",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":22
+            }
+         ]
+      },
+      {
+         "id":22,
+         "character":"...",
+         "dialog":"He smiles nervously.",
+         "options":[
+            {
+               "text":"Question the drunkard",
+               "nextText":23
+            },
+            {
+               "text":"Take him in",
+               "nextText":25
+            },
+            {
+               "text":"Let him go",
+               "nextText":26
+            }
+         ]
+      },
+      {
+         "id":23,
+         "character":"Drunkard",
+         "dialog":"Well you see I, uh... Well... I'm not exactly sure how I got here. I was at the tavern last night... and well, I woke up here.",
+         "options":[
+            {
+               "text":"Question further",
+               "nextText":24
+            },
+            {
+               "text":"Take him in",
+               "nextText":25
+            },
+            {
+               "text":"Let him go",
+               "nextText":26
+            }
+         ]
+      },
+      {
+         "id":24,
+         "character":"Drunkard",
+         "dialog":"I didn't mean any harm to the maiden, honest. My apologies to you, my lady. I must've stumbled in here while she was asleep. I didn't lay a hand on her. On my honor.",
+         "options":[
+            {
+               "text":"Take him in",
+               "nextText": 25
+            },
+            {
+               "text":"Let him go",
+               "nextText": 26
+            }
+         ]
+      },
+      {
+         "id":25,
+         "character":"...",
+         "dialog":"Even if he is telling the truth, public disturbance is still a crime. You bind his arms as he gives into arrest. You walk him to the barracks where he is charged with being public nuisance. He is sentenced to three days on the pillary. You are now responsible for locking him to the thing. You set out the complimentary bucket of tomatoes and head back towards your post. To your great relief, someone else is standing in your place. You are done for the day.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":27
+            }
+         ]
+      },
+      {
+         "id":26,
+         "character":"...",
+         "dialog":"Your almost done for the day. You haven't any time to be dealing with a drunkard when what you really need is sleep. The woman stomps off in a huff and you wait to be relieved.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":27
+            }
+         ]
+      },
+      {
+         "id":27,
+         "character":"...",
+         "dialog":"Oh... Well. Um. Look at that. This is a bit awkward... You've made it to the part of the story that just isn't quite finished. A shame. It has a pretty good ending. Not to worry though! There are quite a few finished endings on other routes! As a creator, I just didn't have quite enough time to fit them all in here. Might I suggest the rogue route? You get to meet this character there if you make out alive. Not to worry though. For now you'll keep your life. To the beginning with you.",
+         "options":[
+           {
+              "text":"Continue",
+              "nextText":-1
+           }
          ]
       }
    ]

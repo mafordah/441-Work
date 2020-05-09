@@ -250,32 +250,614 @@
                "nextText":16
             },
             {
-               "text":"Walk yourself to the barracks",
-               "nextText": "na"
-            },
-            {
                "text":"Attempt escape",
-               "nextText": "na"
+               "nextText": 49
+            }
+         ],
+         "events":[
+            {
+              "item":"tatteredSword",
+              "nextText":52
             }
          ]
       },
       {
          "id":16,
-         "character":"",
-         "dialog":"You there! What do you think you are doing?! And in a maiden's quarters no less! Straight to the barracks with you!",
+         "character":"...",
+         "dialog":"You show your hands as a sign of surrender. The guard reaches to restrain them but stops suddenly.",
          "options":[
             {
-               "text":"Give the guard your name",
-               "nextText":16
-            },
-            {
-               "text":"Walk yourself to the barracks",
+               "text":"Continue",
                "nextText":17
+            }
+         ]
+      },
+      {
+         "id":17,
+         "character":"Castle Guard",
+         "dialog":"Aren't you the fellow that got stuck in the pig pen last week?",
+         "options":[
+            {
+               "text":"Yes",
+               "nextText":18
             },
             {
-               "text":"Attempt escape",
-               "nextText":18
+               "text":"No",
+               "nextText":51
             }
+         ]
+      },
+      {
+         "id":18,
+         "character":"Castle Guard",
+         "dialog":"I knew it! Haha, HAHA, HAHAHAHA!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":19
+            }
+         ]
+      },
+      {
+         "id":19,
+         "character":"...",
+         "dialog":"The guard is thrown into a deep belly laugher over the whole ordeal.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":20
+            }
+         ]
+      },
+      {
+         "id":20,
+         "character":"Castle Guard",
+         "dialog":"HAHAHA! The pigs! And you were!! HAHAHA!! Your pants!! Completely drunk you were!! HAHA! Haha! Haha... Ha... Woo... What an great day to be a castle guard that one was. Ah... I see, well. I'll let you off just this once. I can't promise I'll be the guard next time though. Stay out of trouble.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":21
+            }
+         ]
+      },
+      {
+         "id":21,
+         "character":"...",
+         "dialog":"The woman gives the guard a disgruntled look as you stand yourself up. You shuffle passed them and make your way down the hall. You can just hear the echos of their arguement.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":22
+            }
+         ]
+      },
+      {
+         "id":22,
+         "character":"...",
+         "dialog":"As you make your way out of the castle, you hear the famiar approach of a carriage down the castle walk. This carriage however, is coupled with the less common heralding trumpets. It must be an important guest.",
+         "options":[
+            {
+               "text":"Investigate",
+               "nextText":24
+            },
+            {
+               "text":"It's none of your business",
+               "nextText":23
+            }
+         ]
+      },
+      {
+         "id":23,
+         "character":"...",
+         "dialog":"Who are you to bother anyone in the castle any further. You return back to your life in your run-of-the-mill hometown. In days time, an unexpect war breaks out between a Duke and local royalty. You are drafted as a soldier. There are no winners as you fight long and hard to your death.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+         ]
+      },
+      {
+         "id":24,
+         "character":"...",
+         "dialog":"You duck behind the large stone pillers in the courtyard and get a closer look. And what a look it is. A beautiful royal dressed head to foot in blue and gold is escourted into the castle.",
+         "options":[
+            {
+               "text":"Follow",
+               "nextText":26
+            },
+            {
+               "text":"Go home",
+               "nextText":23
+            }
+         ],
+         "events":[
+            {
+              "item":"tatteredSword",
+              "nextText":25
+            }
+         ]
+      },
+      {
+         "id":25,
+         "character":"...",
+         "dialog":"You are overwelmed with jealousy. What right has anyone to adorn themselves with gold while children of your town starve. Your rush the royal party and excecute their Highness. You are tried for treason and are hung for your crimes.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+         ]
+      },
+      {
+         "id":26,
+         "character":"...",
+         "dialog":"You step quietly behind the royal party and follow them into the castle. The royal is lead to the guest room and the rest of the party disperses. You approach the door.",
+         "options":[
+            {
+               "text":"Look through the keyhole",
+               "nextText":27
+            },
+            {
+               "text":"Listen through the door",
+               "nextText":28
+            }
+         ]
+      },
+      {
+         "id":27,
+         "character":"...",
+         "dialog":"You place you ear gently to the door. You hear someone singing to themselves.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":29
+            }
+         ]
+      },
+      {
+         "id":28,
+         "character":"...",
+         "dialog":"You squint your eye through the keyhole. You see the royal adjusting themselves in an adjacent mirror.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":29
+            }
+         ]
+      },
+      {
+         "id":29,
+         "character":"???",
+         "dialog":"You there!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":30
+            }
+         ]
+      },
+      {
+         "id":30,
+         "character":"...",
+         "dialog":"You look down the hall but see no one.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":31
+            }
+         ]
+      },
+      {
+         "id":31,
+         "character":"???",
+         "dialog":"Don't think I didn't see you follow me all the way here.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":32
+            }
+         ]
+      },
+      {
+         "id":32,
+         "character":"...",
+         "dialog":"The royal inside the room opens the door. You tumble inside.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":33
+            }
+         ]
+      },
+      {
+         "id":33,
+         "character":"Royal Highness",
+         "dialog":"Well you when to all the trouble of following me here. What do you want from me. Silver? Gold??",
+         "options":[
+            {
+               "text":"Silver",
+               "nextText":34
+            },
+            {
+               "text":"Gold",
+               "nextText":34
+            }
+         ],
+         "events":[
+            {
+              "item":"bottle",
+              "nextText":36
+            }
+         ]
+      },
+      {
+         "id":34,
+         "character":"Royal Highness",
+         "dialog":"That's it then. Well it's only a brass farthing to me. Take it and be on your way.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":35
+            }
+         ]
+      },
+      {
+         "id":35,
+         "character":"...",
+         "dialog":"You use your new found funds to get royally wasted at the local tavern. You pass out and wake up in the castle once again. This time, the guard isn't so generous...",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+          ]
+      },
+      {
+         "id":36,
+         "character":"Royal Highness",
+         "dialog":"A drink, ay. I can do you one better. Come with me to my meeting with the Duke. You'll be my royal guest. All the wine we can drink, on my honor.",
+         "options":[
+            {
+               "text":"Accept invitation",
+               "nextText":37
+            },
+            {
+               "text":"Decline invitation",
+               "nextText":23
+            }
+          ]
+      },
+      {
+         "id":37,
+         "character":"...",
+         "dialog":"You follow the royal to the dinning hall. The royal intruduces you as a royal guest. The Duke of Cardamon sits at the head of the table.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":38
+            }
+          ]
+      },
+      {
+         "id":38,
+         "character":"Duke of Cardamon",
+         "dialog":"I see. Tell me, Royal Guest. What business do you have with their Royal Highness?",
+         "options":[
+            {
+               "text":"Tell the truth",
+               "nextText":39
+            },
+            {
+               "text":"Lie through your teeth",
+               "nextText":41
+            }
+          ]
+      },
+      {
+         "id":39,
+         "character":"Duke of Cardamon",
+         "dialog":"I WILL NOT HAVE A LOWLY DRUNKARD WANDERING MY CASTLE! GUARDS! TAKE HIM AWAY!!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":40
+            }
+          ]
+      },
+      {
+         "id":40,
+         "character":"...",
+         "dialog":"It's the same guard but they're much less friendly infront of the Duke. They look at you apologetically and carry you to the castle dungeon. You are forgotten and waste away.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+          ]
+      },
+      {
+         "id":41,
+         "character":"...",
+         "dialog":"You claim yourself to be a great political advisor to the royal family.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":42
+            }
+          ]
+      },
+      {
+         "id":42,
+         "character":"The Duke of Cardamon",
+         "dialog":"Oh how excelent! That is precisely what this meeting is about. We shall address you then. If you would direct yourself to my advisor.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":43
+            }
+          ]
+      },
+      {
+         "id":43,
+         "character":"...",
+         "dialog":"The advisor gives a rather monotonous presentation on the Dukes new found super power, Dark Energy.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":44
+            }
+          ]
+      },
+      {
+         "id":44,
+         "character":"The Duke of Cardamon",
+         "dialog":"So you see. We have aquired a most destructive power... and... I really don't want to use it on your kingdom. We can do this civilly, or by force. Hand over your kingdom.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":46
+            }
+          ],
+          "events":[
+             {
+               "item":"tatteredSword",
+               "nextText":45
+             }
+          ]
+      },
+      {
+         "id":45,
+         "character":"The Duke of Cardamon",
+         "dialog":"You take your dagger and quickly assalt the Duke. You will not see this kind royal taken down this easily. He falls to the ground and the guards rush to his side. The royal grabs you by the arm and drags you off to their carriage. You are carted off to live in the kingdom forever. You've done it! You've completed your quest. Mass destruction shall not take place just yet. You know may continue your life free of my influence. Or don't. I don't really care. However, you must start from the beginning. Congradulations!",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":-1
+            }
+          ]
+      },
+      {
+         "id":46,
+         "character":"...",
+         "dialog":"The royal attempts escape but the guards block the exit.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":47
+            }
+          ],
+          "events":[
+             {
+               "item":"tatteredSword",
+               "nextText":45
+             }
+          ]
+      },
+      {
+         "id":47,
+         "character":"...",
+         "dialog":"They surround the royal. You watch unmoving as they are dragged toward the dungeon.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":48
+            }
+          ],
+          "events":[
+             {
+               "item":"tatteredSword",
+               "nextText":45
+             }
+          ]
+      },
+      {
+         "id":48,
+         "character":"...",
+         "dialog":"As the royal is captured war rages. You are forced to fight on the side of the Duke. There are no winners as you fight long and hard to your death.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":-2
+            }
+          ]
+      },
+      {
+         "id":49,
+         "character":"...",
+         "dialog":"With nothing to aid in your escape, you attempt to jump out the window. The guard however, is quick to your plan and stops you dead in your tracks.",
+         "options":[
+            {
+               "text":"Continue",
+               "nextText":50
+            }
+          ]
+      },
+      {
+        "id":50,
+        "character":"...",
+        "dialog":"For your crimes, you are hung in a pillary for three days as onlooker garnish you with rotten tomatoes. On the third day, war breaks out. You become a forgotten relic as the war rages and die of starvation.",
+        "options":[
+           {
+              "text":"Continue",
+              "nextText":-2
+           }
+         ]
+      },
+      {
+        "id":51,
+        "character":"Castle Guard",
+        "dialog":"Oh strange well you look just like the bloke. Of we go then.",
+        "options":[
+           {
+              "text":"Continue",
+              "nextText":50
+           }
+         ]
+      },
+      {
+        "id":52,
+        "character":"...",
+        "dialog":"You point your sword at the guard and he steps back. It gives you just enough time to jump out the window. The guard chases you.",
+        "options":[
+           {
+              "text":"Run home",
+              "nextText":23
+           },
+           {
+              "text":"Climb to another window",
+              "nextText":53
+           }
+         ]
+      },
+      {
+        "id":53,
+        "character":"...",
+        "dialog":"You jump across the courtyard to an adjacent window. You enter a strange looking study full of bookshelves and cabinets. You see a desk with an officially looking document on it.",
+        "options":[
+           {
+              "text":"Read the document",
+              "nextText":55
+           },
+           {
+              "text":"Take the document",
+              "item":"document",
+              "nextText":54
+           }
+
+         ]
+      },
+      {
+        "id":54,
+        "character":"...",
+        "dialog":"You steal the document of the table in hopes of selling it in the future. While you make a couple bucks, days later, a war breaks out as a royal was accused of taking it after confiscating it from a black market. You are drafted as a soldier. There are no winners as you fight long and hard to your death.",
+        "options":[
+           {
+              "text":"Continue",
+              "nextText":-2
+           }
+         ]
+      },
+      {
+        "id":55,
+        "character":"The Effects of Dark Energy",
+        "dialog":"Dark Energy: The previously unknown force was discovered when a component of an arcane object was divided into two parts. The effects were catastrophic.",
+        "options":[
+           {
+              "text":"Continue reading",
+              "nextText":56
+           },
+           {
+              "text":"Take the document",
+              "item":"document",
+              "nextText":54
+           },
+           {
+              "text":"Destroy the document",
+              "nextText":60
+           }
+
+         ]
+      },
+      {
+        "id":56,
+        "character":"The Effects of Dark Energy",
+        "dialog":"An explosion far greater than that of any cannon erupted decimating the research lab. Of the thirty-seven subjects in the lab, no one escaped with their lives. These subject included the prior Duke of Cardamon and his advisor. Those who later inspected the wreckage were also effected.",
+        "options":[
+           {
+              "text":"Continue reading",
+              "nextText":57
+           },
+           {
+              "text":"Take the document",
+              "item":"document",
+              "nextText":54
+           },
+           {
+              "text":"Destroy the document",
+              "nextText":60
+           }
+
+         ]
+      },
+      {
+        "id":57,
+        "character":"The Effects of Dark Energy",
+        "dialog":"Three subjects: Dustin Reign, male, aged 37 years; Weyrn West, female, aged 48 years; Towhard Fetter, male, aged 22 years; All subjects experienced confusion, anger, and complete hysteria while studies took place. Fetter's condition progressed into aggressive tendancies as he attacked researchers and other subjects.",
+        "options":[
+           {
+              "text":"Continue reading",
+              "nextText":58
+           },
+           {
+              "text":"Take the document",
+              "item":"document",
+              "nextText":54
+           },
+           {
+              "text":"Destroy the document",
+              "nextText":60
+           }
+
+         ]
+      },
+      {
+        "id":58,
+        "character":"The Effects of Dark Energy",
+        "dialog":"Further studies have taken place sense this event. Later missions to the sight of the explosion left subjects feeling unchanged with family members stating a slight change in behavior toward some aggressive tendancies. Current studies of Dark Energy research the effects on soldiers, and the detonating of arcane objects as weaponry. The results are still inconclusive.",
+        "options":[
+           {
+              "text":"Continue reading",
+              "nextText":59
+           }
+         ]
+      },
+      {
+        "id":59,
+        "character":"...",
+        "dialog":"The rest of the document contains pages of figure reports for the various studies.",
+        "options":[
+           {
+              "text":"Take the document",
+              "item":"document",
+              "nextText":54
+           },
+           {
+              "text":"Destroy the document",
+              "nextText":60
+           }
+
+         ]
+      },
+      {
+        "id":60,
+        "character":"...",
+        "dialog":"You shred the document to a thousand pieces on to your sword. Little did you know, the document was about to be used a leverage to wage war on a neighboring kingdom. You stopped the complete destruction caused by Dark Energy as I'd sent your for. Congradulations! You've completed your quest. You are now free to live your life however you choose. Continue, don't continue, I don't really care. However, you're going to need to start at the beginning.",
+        "options":[
+           {
+              "text":"Continue",
+              "nextText":-1
+           }
          ]
       }
    ]
