@@ -398,11 +398,11 @@
          "options":[
             {
                "text":"Look through the keyhole",
-               "nextText":27
+               "nextText":28
             },
             {
                "text":"Listen through the door",
-               "nextText":28
+               "nextText":27
             }
          ]
       },
@@ -854,7 +854,7 @@
       {
         "id":60,
         "character":"...",
-        "dialog":"You shred the document to a thousand pieces on to your sword. Little did you know, the document was about to be used a leverage to wage war on a neighboring kingdom. You stopped the complete destruction caused by Dark Energy as I'd sent your for. Congradulations! You've completed your quest. You are now free to live your life however you choose. Continue, don't continue, I don't really care. However, you're going to need to start at the beginning.",
+        "dialog":"You shred the document to a thousand pieces on to your sword. Little did you know, the document was about to be used as leverage to wage war on a neighboring kingdom. You stopped the complete destruction caused by Dark Energy as I'd sent your for. Congradulations! You've completed your quest. You are now free to live your life however you choose. Continue, don't continue, I don't really care. However, you're going to need to start at the beginning.",
         "options":[
            {
               "text":"Continue",
