@@ -75,9 +75,11 @@
          "character":"...",
          "dialog":"That sword is the weapon of your character. It may aid you on your quest if you so choose.",
          "options":[
-
+           {
+              "text":"Continue",
+              "nextText":4
+           },
          ],
-         "nextId":4
       },
       {
          "id":4,
