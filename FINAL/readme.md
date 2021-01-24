@@ -1,4 +1,4 @@
-# Final Projeck
+# Final Project
 ## My Experience
 For this project I had an great time trying my hand at story telling. I did end up going a little over board on the options for some of the routes and lost time on the others. There are however 2 fully completed routes. The route of the "bright one" (entered by clicking "someone brilliant") and "rogue one" (entered by clicking "someone brash") are complete finished with several different endings and item events. Will definitely be finishing all of the routes and endings as we move into the summer (I might even have a few more by the time this is graded). But for the record, I did only have those two done at the time this was turned in.
 
